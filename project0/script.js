@@ -8,12 +8,16 @@ const classNames = {
 const list = document.getElementById('todo-list')
 const itemCountSpan = document.getElementById('item-count')
 const uncheckedCountSpan = document.getElementById('unchecked-count')
+const input_check = document.getElementById('myInput')
 
 function newTodo() {
-    const task = list.value
+    const task = input_check.value
     if(!task){
-        alert("No task selected")
+        alert("No task selected");}
+    else {
+        console.log('succes');
     }
+    
 
     
 }
